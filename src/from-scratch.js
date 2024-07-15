@@ -17,12 +17,20 @@ class Rectangle extends Quadrilateral {
   getArea() {
     return this.side1 * this.side2;
   }
+  // from lab review - CORRECT WAY TO DO
+  // getDiagonal() {
+  //   return Math.sqrt(this.side1 ** 2 + this.s2 ** 2);
+  // }
 }
 
 class Square extends Rectangle {
   constructor(side1) {
     super(side1, side1, side1, side1)
   }
+  // from lab review - CORRECT WAY TO DO
+  // constructor(side1) {
+  //   super(side1, side1)
+  // }
   getDiagonal() {
     return Math.sqrt(2) * this.side1;
     // return Math.sqrt((this.getArea() * 2));
