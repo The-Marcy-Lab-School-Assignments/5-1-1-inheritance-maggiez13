@@ -17,7 +17,8 @@ class Rectangle extends Quadrilateral {
   getArea() {
     return this.side1 * this.side2;
   }
-  // from lab review - CORRECT WAY TO DO
+  // from lab review - getDiagonal can be here since it can be calculated
+  //   square will be able to inherit getDiagonal still  
   // getDiagonal() {
   //   return Math.sqrt(this.side1 ** 2 + this.s2 ** 2);
   // }
