@@ -1,3 +1,4 @@
+/** FEEDBACK: YOU are killing it!!!! */
 class Quadrilateral {
   constructor(side1, side2, side3, side4) {
     this.side1 = side1; 
@@ -17,6 +18,7 @@ class Rectangle extends Quadrilateral {
   getArea() {
     return this.side1 * this.side2;
   }
+  /** FEEDBACK: Perfect! I was going to comment on this but now I do not have to! */
   // from lab review - getDiagonal can be here since it can be calculated
   //   square will be able to inherit getDiagonal still  
   // getDiagonal() {
@@ -28,6 +30,7 @@ class Square extends Rectangle {
   constructor(side1) {
     super(side1, side1, side1, side1)
   }
+  /** FEEDBACK: This was going to be my feedback but you got it! */
   // from lab review - CORRECT WAY TO DO
   // constructor(side1) {
   //   super(side1, side1)
@@ -39,6 +42,7 @@ class Square extends Rectangle {
 }
 
 /* Be creative with this one! */
+/** FEEDBACK: LOVE THIS! */
 class Person {
   static #instances = []; // private variable to track each new instance
 
